@@ -1,0 +1,512 @@
+html { /* Sets default background color */
+    background-color: #707070;
+}
+
+/*On Form_Submitted*/
+
+#Full-Form {
+    color: white;
+    display: grid;
+    grid-template-columns: 40% 45%;
+    grid-gap: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px 0;
+}
+
+#Form-Left {
+    color: white;
+    padding: 0 3%;
+}
+    #Form-Left-Top { /*Changes Requests*/
+        color: white;
+    }
+        #Employee-Name, #Employer-Name, #Work-Order-Lead-List, #Company-Supervisor-List, #Work-Order-Manager-List, #Project-Code {
+            font-size: 10pt;
+            color: black;
+            margin: 8px 0;
+        }
+
+        #WOM-Not-Found-Note {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        #Employee-Name:hover, #Employer-Name:hover, #Work-Order-Lead-List:hover, #Company-Supervisor-List:hover, #Work-Order-Manager-List:hover, #Project-Code:hover,  #Purpose-For-Request:hover, #Training-Title:hover, #Travel-City:hover, #Travel-State:hover, 
+        #Training-Start-Date:hover, #Training-End-Date:hover, #Travel-Start-Date:hover, #Travel-End-Date:hover, #Training-Cost:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            border-color: black;
+        }
+
+        #MIE-Rate:hover, #Lodging-Rate:hover, #Round-Mileage-Cost:hover, #Est-Ground-Trans-Fees:hover, #Est-Airfare-Price:hover, #Baggage-Fees:hover, #Est-Car-Rental-Price:hover, #Est-Fuel-Cost:hover, #Other-Cost:hover {
+            box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+            border-color: white;
+        }
+        #Purpose-For-Request, #Training-Title  {
+            width: 100%;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            ::placeholder {
+                color: #b9bdcf;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        
+    #Form-Left-Bottom
+        #Travel-City, #Travel-State  {
+            width: 100%;
+            padding: 10px;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #Training-Start-Date, #Training-End-Date, #Travel-Start-Date, #Travel-End-Date {
+            margin: 8px 0;
+        }
+        
+
+    #Training-Cost {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+#Right-Form {
+    padding: 12px 20px;
+}
+
+#Sub-Right-Form {
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+}
+
+#Right-Form-Top-Buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+}
+
+#Right-Form-Block{
+    background-color: black;
+    text-align: left;
+    color: white;
+    display: block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+    #SevenFive-MIE-Rate:disabled, #Calc-MIE:disabled, #Calc-Lodge:disabled, #Est-Lodge-Tax-Fees:disabled{
+        background-color: rgb(113, 113, 113);
+        color: white;
+    }
+
+    #SevenFive-MIE-Rate, #MIE-Rate, #Lodging-Rate, #Calc-MIE, #Calc-Lodge, #Est-Lodge-Tax-Fees, #Round-Mileage-Cost, #Est-Ground-Trans-Fees, #Est-Airfare-Price, #Baggage-Fees, #Est-Car-Rental-Price, #Est-Fuel-Cost {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;    
+    }
+
+    #Other-Cost {
+        width: 100%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-bottom: 2px solid #ccc;
+    }
+
+#Travel-Total-out, #Total-Cost-out {
+    text-align: left;
+}
+
+#perDiemRate, #googleMapsBTN {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#perDiemRate:hover, #googleMapsBTN:hover {
+    background-color: lightgray;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-color: black;
+}
+
+#submit-btn {
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 60px;
+    color: black;
+    border-color: black;
+}
+
+#submit-btn:hover {
+    background-color: #4CAF50;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-color: black;
+}
+
+#submit-btn[disabled] {
+    background-color: transparent;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#submit-btn[disabled]:hover {
+    background-color: transparent;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#reset-btn {
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 60px;
+    color: black;
+    border-color: black;
+}
+
+#reset-btn:hover {
+    background-color: #f44336;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(250, 250, 250, 0.19);
+}
+
+
+/* ON FORM_SUBMITTED.PY*/
+#Full-Form-FS { /*Changes color of all text*/
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%; 
+    text-align: center; 
+    border-collapse: collapse;
+}
+
+#fs_OutputTable Table{
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    table-layout: fixed;
+}
+
+#fs_OutputTable Thead {
+    width: 6.7%;
+}
+
+#fs_OutputTable Th {
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    width: 6.7%;
+    word-wrap: break-word;
+}
+
+#fs_OutputTable Td {
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    width: 6.7%;
+    word-wrap: break-word;
+}
+
+#fs_OutputTable Th:hover {
+    background-color:grey;
+    text-shadow: 1px 1px 1px black;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#fs_OutputTable Tbody {
+    height: 100px;
+}
+
+#form-Callback-Info { /*Changes color of table text*/
+    color: white;
+    background-color: black;
+    text-align: center;
+    color: white;
+    display: block;
+    margin: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+/* ON ADMIN.PY */
+
+#adminTable {
+    color: white;
+    display: grid;
+    grid-template-columns: 2% 94% 2%;
+    grid-gap: 1%;
+}
+
+#adminTable button {
+    background-color: #333;
+}
+
+#adminOuterDiv Table{
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    table-layout: fixed;
+}
+
+#adminOuterDiv Thead {
+    color: white;
+    width: 6.7%;
+}
+
+#adminOuterDiv Th {
+    color: white;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    width: 6.7%;
+    word-wrap: break-word;
+}
+
+#adminOuterDiv Td {
+    color: white;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    width: 6.7%;
+    word-wrap: break-word;
+}
+
+#adminOuterDiv Th:hover {
+    color: white;
+    background-color:grey;
+    text-shadow: 1px 1px 1px black;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#adminOuterDiv Tbody {
+    height: 100px;
+    color: white;
+}
+
+#adminApproval { /*Changes color of table text*/
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: block;
+    margin: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+.editLeftSideItem{
+    border: 1px solid #dfdfdf;
+}
+
+#editInfoTrainingTitle {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+    ::placeholder {
+        color: #b9bdcf;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+#editInfo H3{
+    color: white;
+}
+
+#editInfo {
+    color: black;
+}
+
+#editInfoTotalCost, #editInfoTrainingTitle, #editInfoTrainingPurpose, #editInfoCertification, #editInfoTravelStart, #editInfoTravelEnd, #editInfoDestination, #editInfoTrainingStart, #editInfoTrainingEnd, #editInfoTrainingCost, #editInfoTripMIE, #editInfoLodging, #editInfoLodgingTaxesFees, #editInfoAutoMileage, #editInfoRentalCar, #editInfoGroundTransportation, #editInfoFuelCost, #editInfoAirfare, #editInfoBaggage, #editInfoOther, #editInfoID{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#editInfoUpdateButton {
+    float: none;
+}
+
+#editInfoID{
+    background-color: rgb(113, 113, 113);
+    color: white;
+}
+
+/* USER REQUESTS */
+#userRequests { /*Changes color of table text*/
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: block;
+    margin: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+#userRequestsOuterDiv Table{
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    table-layout: fixed;
+}
+
+#userRequestsOuterDiv Thead {
+    color: white;
+    width: 6.7%;
+}
+
+#userRequestsOuterDiv Th {
+    color: white;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    width: 6.7%;
+    word-wrap: break-word;
+}
+
+#userRequestsOuterDiv Td {
+    color: white;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    width: 6.7%;
+    word-wrap: break-word;
+}
+
+#userRequestsOuterDiv Th:hover {
+    color: white;
+    background-color:grey;
+    text-shadow: 1px 1px 1px black;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#userRequestsOuterDiv Tbody {
+    height: 100px;
+    color: white;
+}
+
+#navBar A { /* Nav Bar */
+    padding: 7%;
+}
+
+/*
+
+Page Selection CSS Section
+
+*/
+
+#pageSelection{
+    position: fixed;
+    top: 30%;
+    right: 40%;
+    border-radius: 3px;
+    border: 2px solid black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #ccc;
+    font-size: 20px;
+}
+
+#selectionPageBox {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+
+
+  /*
+  * USER ACCESS PAGE
+  */
+
+  .userAccessEditInner {
+    display: grid;
+    grid-template-columns: 31% 32% 31% 5%;
+    border: 1px solid #ccc;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: #ccc;
+    background-color: #111;
+  }
+
+  .userAccessEditInner input{
+    width: 50%;
+    height: 30%;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .userAccessEditInner button{
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .userAccessEditInner input:focus{
+    width: 75%;
+  }
+
+  .userAccessRole {
+    width: 75%;
+    color: #111;
+  }
+

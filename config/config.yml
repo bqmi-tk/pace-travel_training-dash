@@ -1,0 +1,18 @@
+AzureAccount: ##Azure
+  username: pkoza
+  password: xAgLBmu#7bSeeYt
+
+EmailAccount: ##Email + Primary Approver
+  email: no-reply-traveltraining@outlook.com
+  password: CyQ1j5a0#hx#!
+  primaryApprover: melissa.j.mongalier@nasa.gov
+  primaryApproverDBID: 209
+
+EmailApprovers: ##Funds/Project Approvers
+  primaryProjectManager: denice.m.ryan@nasa.gov
+  primaryProjectManagerDBID: 211
+  secondaryProjectManager: deanna.j.gullett@nasa.gov
+  secondaryProjectManagerDBID: 207
+  primaryFundsApprover: shelby.watson@nasa.gov
+  primaryFundsApproverDBID: 193
+
