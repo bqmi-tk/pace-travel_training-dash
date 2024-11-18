@@ -3,7 +3,7 @@ AzureAccount: ##Azure
   password: xAgLBmu#7bSeeYt
 
 EmailAccount: ##Email + Primary Approver
-  email: no-reply-traveltraining@outlook.com
+  email: info@bqmi.com
   password: CyQ1j5a0#hx#!
   primaryApprover: melissa.j.mongalier@nasa.gov
   primaryApproverDBID: 209
